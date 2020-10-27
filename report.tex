@@ -1,0 +1,42 @@
+\documentclass[sigconf]{acmart}
+
+% meta-data
+\title{Template Project -- Group Name}
+\author{John Doe}
+\acmConference[Amsterdam]{The Netherlands}{The Netherlands}{2020}%
+
+% remove ACM overhead
+\settopmatter{printacmref=false} % box after abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % copyright on first page
+\pagestyle{plain} % running headers
+
+% setup needed for appendix images
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{url}
+\graphicspath{ {./images/} }
+
+%
+% begin of the document
+%
+\begin{document}
+
+\begin{abstract}
+\input{content/abstract}
+\end{abstract}
+
+\maketitle
+
+% content
+\input{content/template}
+
+% references
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+% appendix
+\input{content/appendix}
+
+\end{document}
+\endinput

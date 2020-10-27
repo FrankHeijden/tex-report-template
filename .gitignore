@@ -1,0 +1,3 @@
+# Ignore texpad specific files
+.texpadtmp/
+report.pdf
